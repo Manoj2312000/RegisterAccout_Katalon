@@ -17,3 +17,25 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('https://tutorialsninja.com/demo/index.php?route=account/register')
+
+WebUI.sendKeys(findTestObject('Registration/Page_Register Account/First Name'), 'Manoj')
+
+WebUI.sendKeys(findTestObject('Registration/Page_Register Account/Last Name'), 'S')
+
+WebUI.sendKeys(findTestObject('Registration/Page_Register Account/E-Mail'), 'svmanoj2312000@gmail.com')
+
+WebUI.sendKeys(findTestObject('Registration/Page_Register Account/Telephone'), '8110085233')
+
+WebUI.sendKeys(findTestObject('Registration/Page_Register Account/Password'), 'Himalayan@23')
+
+WebUI.sendKeys(findTestObject('Registration/Page_Register Account/Password Confirm'), 'Himalayan@23')
+
+WebUI.click(findTestObject('Registration/Page_Register Account/Yes_newsletter'))
+
+WebUI.click(findTestObject('Registration/Page_Register Account/Privacy Policy_Agree'))
+
+WebUI.click(findTestObject('Registration/Page_Register Account/Submit_Button'))
+
+WebUI.closeBrowser()
+
